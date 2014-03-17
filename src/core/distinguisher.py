@@ -12,8 +12,8 @@ from core.cell import Cell
 cells = []
 
 def get_cells_from_image(im, tl_corner, br_corner, pixel_size, threshold):
-    image = im.copy();
-    make_threshold(image, threshold);
+    image = im.copy()
+    make_threshold(image, threshold)
     iterate_through_image(image, (tl_corner, br_corner), pixel_size)
     return image
     
@@ -34,7 +34,7 @@ def iterate_through_image(im, bounds, pixel_size):
         for y in range(bounds[0][1], bounds[1][1]):
             if(im.getpixel((x,y)) == BLACK):
                 cell = Cell(im);
-                cell.fill_self(im, (x,y),pixel_size)
+                cell.fill_self(im, (x,y), pixel_size)
                 if cell.area >= 10 :
                     cells.append(cell)
             
