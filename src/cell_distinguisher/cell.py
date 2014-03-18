@@ -4,7 +4,7 @@ Created on 12 марта 2014 г.
 @author: gleb
 '''
 
-from core.distinguisher import BLACK, WHITE
+from cell_distinguisher.distinguisher import BLACK, WHITE
 
 class Cell(object):
     '''

@@ -7,7 +7,7 @@ BLACK = 0
 WHITE = 255
 
 from PIL import Image
-from core.cell import Cell
+from cell_distinguisher.cell import Cell
 
 cells = []
 
