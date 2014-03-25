@@ -4,13 +4,12 @@ Created on 12 марта 2014 г.
 @author: gleb
 '''
 
-from core.distinguisher import BLACK, WHITE
+from cell_distinguisher.distinguisher import BLACK, WHITE
 
 class Cell(object):
     '''
     Class to represent a closed element of the same color
     '''
-    
     
     def __init__(self, im):
         self.contained_points = []
@@ -18,10 +17,10 @@ class Cell(object):
         self.area = 0
 
     def fill_self(self, image, start_point,pixel_size):
-        self.add(start_point)
+        self.search_and_add(start_point)
         self.pix_size=pixel_size
         
-    def add(self, point_0):
+    def search_and_add(self, point_0):
         self.contained_points.append(point_0)
         self.image.putpixel(point_0, WHITE-100)
         self.area = 0
