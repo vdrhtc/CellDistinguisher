@@ -12,6 +12,7 @@ from core.cell import Cell
 cells = []
 
 def get_cells_from_image(im, tl_corner, br_corner, pixel_size, threshold):
+  
     image = im.copy();
     make_threshold(image, threshold);
     iterate_through_image(image, (tl_corner, br_corner), pixel_size)
