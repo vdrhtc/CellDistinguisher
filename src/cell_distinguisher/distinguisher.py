@@ -14,7 +14,7 @@ cells = []
 def get_cells_from_image(im, tl_corner, br_corner, pixel_size, threshold):
     image = im.copy()
     make_threshold(image, threshold)
-    iterate_through_image(image, (tl_corner, br_corner), pixel_size)
+    __iterate_through_image__(image, (tl_corner, br_corner), pixel_size)
     return image
     
     
@@ -29,7 +29,7 @@ def make_threshold(im, threshold):
     return 
 
 
-def iterate_through_image(im, bounds, pixel_size):
+def __iterate_through_image__(im, bounds, pixel_size):
     for x in range(bounds[0][0], bounds[1][0]):
         for y in range(bounds[0][1], bounds[1][1]):
             if(im.getpixel((x,y)) == BLACK):
