@@ -9,15 +9,15 @@ from PIL import ImageFilter
 from cell_distinguisher.distinguisher import make_threshold
 import sys
 
-def prepare_image(im, slice_thickness, threshold):
+def prepare_image(im, slice_thickness = 50, threshold = 80):
     image = im.copy()   
     image = __image_preparing__(image, threshold)
     slices =__slice_image__(image, slice_thickness)
     return slices
 
-def get_lines(slices, tolerance):
+def get_lines(slice_, tolerance):
     print("Getting coefficients..."); sys.stdout.flush()
-    coeffs = get_coefficients(slices, tolerance)
+    coeffs = get_coefficients(slice_, tolerance)
     return coeffs
 
 def __image_preparing__(im, threshold):
