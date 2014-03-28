@@ -9,10 +9,10 @@ WHITE = 255
 import sys, math
 
 
-def get_coefficients(slice_, tolerance):
+def get_coefficients(slice_, tolerance, max_a):
 #     lines_parameters = fill_intersection_points_list(
 #                                         get_hough_line_parameters(slices[1]), tolerance)
-    lines_parameters = fill_accumulator_list(get_hough_line_parameters(slice_), tolerance)
+    lines_parameters = fill_accumulator_list(get_hough_line_parameters(slice_), tolerance, max_a)
     return lines_parameters
     
     
@@ -28,10 +28,10 @@ def get_hough_line_parameters(slice_):
                 
 
 
-def fill_accumulator_list(line_parameters, tolerance):      
+def fill_accumulator_list(line_parameters, tolerance, max_a):      
     intersection_points = {}
     for i in range(0, len(line_parameters)):
-        print("", end='\r')
+        print('', end='\r')
         print('{}, {}'.format(len(intersection_points), i), end='')
         sys.stdout.flush()
             
@@ -44,7 +44,7 @@ def fill_accumulator_list(line_parameters, tolerance):
             
             a=(line_parameters[j][1]-line_parameters[i][1])/delta_Y
                 
-            if math.fabs(a)<0.1:
+            if math.fabs(a)<max_a:
                 
                 b=line_parameters[i][0]*a+line_parameters[i][1]
                 
