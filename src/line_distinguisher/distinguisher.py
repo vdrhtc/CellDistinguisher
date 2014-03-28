@@ -15,9 +15,9 @@ def prepare_image(im, slice_thickness = 50, threshold = 80):
     slices =__slice_image__(image, slice_thickness)
     return slices
 
-def get_lines(slice_, tolerance):
+def get_lines(slice_, tolerance_a_b = (2, 0), max_a = 0.1):
     print("Getting coefficients..."); sys.stdout.flush()
-    coeffs = get_coefficients(slice_, tolerance)
+    coeffs = get_coefficients(slice_, tolerance_a_b, max_a)
     return coeffs
 
 def __image_preparing__(im, threshold):
