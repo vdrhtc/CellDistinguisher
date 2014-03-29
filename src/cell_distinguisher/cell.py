@@ -60,8 +60,8 @@ class Cell(object):
 #             self.recursive_add((point[0], point[1]-1))
 #             self.recursive_add((point[0]-1, point[1]+1))
 #             self.recursive_add((point[0]-1, point[1]))
-#             self.recursive_add((point[0]-1, point[1]-1))
             
+#             self.recursive_add((point[0]-1, point[1]-1))
     def first_norm(self):
         ''' Square root of area'''
         return self.pix_size*self.area**(1/2)
