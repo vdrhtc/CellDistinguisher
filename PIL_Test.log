@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.1.3)  30 MAR 2014 01:16
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.1.3)  30 MAR 2014 12:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1939,21 +1939,21 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 262.
 
-Package xcolor Warning: Incompatible color definition on input line 262.
+Package xcolor Warning: Incompatible color definition on input line 263.
 
 
-Package xcolor Warning: Incompatible color definition on input line 262.
+Package xcolor Warning: Incompatible color definition on input line 263.
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 262.
+(babel)             in language  on input line 263.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 262.
+(babel)             in language  on input line 263.
 <PIL_Test_files/PIL_Test_10_0.jpeg, id=91, 1027.84pt x 770.88pt>
 File: PIL_Test_files/PIL_Test_10_0.jpeg Graphic file (type jpg)
 
 <use PIL_Test_files/PIL_Test_10_0.jpeg>
 Package pdftex.def Info: PIL_Test_files/PIL_Test_10_0.jpeg used on input line 2
-73.
+75.
 (pdftex.def)             Requested size: 1027.8375pt x 770.87813pt.
 
 <PIL_Test_files/PIL_Test_11_0.jpeg, id=92, 1027.84pt x 770.88pt>
@@ -1961,7 +1961,7 @@ File: PIL_Test_files/PIL_Test_11_0.jpeg Graphic file (type jpg)
 
 <use PIL_Test_files/PIL_Test_11_0.jpeg>
 Package pdftex.def Info: PIL_Test_files/PIL_Test_11_0.jpeg used on input line 2
-78.
+80.
 (pdftex.def)             Requested size: 1027.8375pt x 770.87813pt.
 
 <PIL_Test_files/PIL_Test_12_0.jpeg, id=93, 1027.84pt x 770.88pt>
@@ -1969,42 +1969,42 @@ File: PIL_Test_files/PIL_Test_12_0.jpeg Graphic file (type jpg)
 
 <use PIL_Test_files/PIL_Test_12_0.jpeg>
 Package pdftex.def Info: PIL_Test_files/PIL_Test_12_0.jpeg used on input line 2
-84.
+86.
 (pdftex.def)             Requested size: 1027.8375pt x 770.87813pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 293.
+Package xcolor Warning: Incompatible color definition on input line 295.
 
 
-Package xcolor Warning: Incompatible color definition on input line 293.
+Package xcolor Warning: Incompatible color definition on input line 295.
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 293.
+(babel)             in language  on input line 295.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 293.
+(babel)             in language  on input line 295.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 304.
+(babel)             in language  on input line 306.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 304.
+(babel)             in language  on input line 306.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 304.
+(babel)             in language  on input line 306.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 304.
+(babel)             in language  on input line 306.
 [2 <./PIL_Test_files/PIL_Test_10_0.jpeg> <./PIL_Test_files/PIL_Test_11_0.jpeg> 
 <./PIL_Test_files/PIL_Test_12_0.jpeg>]
 
-Package xcolor Warning: Incompatible color definition on input line 304.
+Package xcolor Warning: Incompatible color definition on input line 306.
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 304.
+(babel)             in language  on input line 306.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 304.
+(babel)             in language  on input line 306.
 <PIL_Test_files/PIL_Test_17_0.jpeg, id=104, 151.56625pt x 84.315pt>
 File: PIL_Test_files/PIL_Test_17_0.jpeg Graphic file (type jpg)
 
 <use PIL_Test_files/PIL_Test_17_0.jpeg>
 Package pdftex.def Info: PIL_Test_files/PIL_Test_17_0.jpeg used on input line 3
-25.
+27.
 (pdftex.def)             Requested size: 151.56587pt x 84.31477pt.
 
 <PIL_Test_files/PIL_Test_19_0.png, id=105, 158.5925pt x 84.315pt>
@@ -2012,7 +2012,7 @@ File: PIL_Test_files/PIL_Test_19_0.png Graphic file (type png)
 
 <use PIL_Test_files/PIL_Test_19_0.png>
 Package pdftex.def Info: PIL_Test_files/PIL_Test_19_0.png used on input line 33
-0.
+2.
 (pdftex.def)             Requested size: 158.59209pt x 84.31477pt.
 
 <PIL_Test_files/PIL_Test_20_0.jpeg, id=107, 770.88pt x 578.16pt>
@@ -2020,24 +2020,24 @@ File: PIL_Test_files/PIL_Test_20_0.jpeg Graphic file (type jpg)
 
 <use PIL_Test_files/PIL_Test_20_0.jpeg>
 Package pdftex.def Info: PIL_Test_files/PIL_Test_20_0.jpeg used on input line 3
-39.
+41.
 (pdftex.def)             Requested size: 770.87813pt x 578.15858pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 348.
+Package xcolor Warning: Incompatible color definition on input line 350.
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 348.
+(babel)             in language  on input line 350.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 348.
+(babel)             in language  on input line 350.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 384.
+(babel)             in language  on input line 386.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 384.
+(babel)             in language  on input line 386.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 384.
+(babel)             in language  on input line 386.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 384.
+(babel)             in language  on input line 386.
 [3 <./PIL_Test_files/PIL_Test_17_0.jpeg> <./PIL_Test_files/PIL_Test_19_0.png> <
 ./PIL_Test_files/PIL_Test_20_0.jpeg>]
 <PIL_Test_files/PIL_Test_26_0.jpeg, id=117, 770.88pt x 225.84375pt>
@@ -2045,7 +2045,7 @@ File: PIL_Test_files/PIL_Test_26_0.jpeg Graphic file (type jpg)
 
 <use PIL_Test_files/PIL_Test_26_0.jpeg>
 Package pdftex.def Info: PIL_Test_files/PIL_Test_26_0.jpeg used on input line 3
-89.
+91.
 (pdftex.def)             Requested size: 770.87813pt x 225.84319pt.
 
 <PIL_Test_files/PIL_Test_27_0.jpeg, id=118, 225.84375pt x 225.84375pt>
@@ -2053,7 +2053,7 @@ File: PIL_Test_files/PIL_Test_27_0.jpeg Graphic file (type jpg)
 
 <use PIL_Test_files/PIL_Test_27_0.jpeg>
 Package pdftex.def Info: PIL_Test_files/PIL_Test_27_0.jpeg used on input line 3
-94.
+96.
 (pdftex.def)             Requested size: 225.84319pt x 225.84319pt.
 
 <PIL_Test_files/PIL_Test_28_0.jpeg, id=119, 225.84375pt x 225.84375pt>
@@ -2061,7 +2061,7 @@ File: PIL_Test_files/PIL_Test_28_0.jpeg Graphic file (type jpg)
 
 <use PIL_Test_files/PIL_Test_28_0.jpeg>
 Package pdftex.def Info: PIL_Test_files/PIL_Test_28_0.jpeg used on input line 3
-97.
+99.
 (pdftex.def)             Requested size: 225.84319pt x 225.84319pt.
 
 <PIL_Test_files/PIL_Test_29_0.jpeg, id=120, 225.84375pt x 225.84375pt>
@@ -2069,7 +2069,7 @@ File: PIL_Test_files/PIL_Test_29_0.jpeg Graphic file (type jpg)
 
 <use PIL_Test_files/PIL_Test_29_0.jpeg>
 Package pdftex.def Info: PIL_Test_files/PIL_Test_29_0.jpeg used on input line 4
-01.
+03.
 (pdftex.def)             Requested size: 225.84319pt x 225.84319pt.
 
 <PIL_Test_files/PIL_Test_31_0.jpeg, id=121, 752.8125pt x 752.8125pt>
@@ -2077,30 +2077,30 @@ File: PIL_Test_files/PIL_Test_31_0.jpeg Graphic file (type jpg)
 
 <use PIL_Test_files/PIL_Test_31_0.jpeg>
 Package pdftex.def Info: PIL_Test_files/PIL_Test_31_0.jpeg used on input line 4
-14.
+16.
 (pdftex.def)             Requested size: 752.81065pt x 752.81065pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 417.
+(babel)             in language  on input line 419.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 417.
+(babel)             in language  on input line 419.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 417.
+(babel)             in language  on input line 419.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 417.
+(babel)             in language  on input line 419.
 [4 <./PIL_Test_files/PIL_Test_26_0.jpeg> <./PIL_Test_files/PIL_Test_27_0.jpeg> 
 <./PIL_Test_files/PIL_Test_28_0.jpeg> <./PIL_Test_files/PIL_Test_29_0.jpeg>]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 417.
+(babel)             in language  on input line 419.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 417.
+(babel)             in language  on input line 419.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 417.
+(babel)             in language  on input line 419.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 417.
+(babel)             in language  on input line 419.
 
 [5 <./PIL_Test_files/PIL_Test_31_0.jpeg>]
 <PIL_Test_files/PIL_Test_33_0.jpeg, id=133, 225.84375pt x 225.84375pt>
@@ -2108,7 +2108,7 @@ File: PIL_Test_files/PIL_Test_33_0.jpeg Graphic file (type jpg)
 
 <use PIL_Test_files/PIL_Test_33_0.jpeg>
 Package pdftex.def Info: PIL_Test_files/PIL_Test_33_0.jpeg used on input line 4
-24.
+26.
 (pdftex.def)             Requested size: 225.84319pt x 225.84319pt.
 
 <PIL_Test_files/PIL_Test_35_0.jpeg, id=134, 770.88pt x 225.84375pt>
@@ -2116,20 +2116,10 @@ File: PIL_Test_files/PIL_Test_35_0.jpeg Graphic file (type jpg)
 
 <use PIL_Test_files/PIL_Test_35_0.jpeg>
 Package pdftex.def Info: PIL_Test_files/PIL_Test_35_0.jpeg used on input line 4
-30.
+32.
 (pdftex.def)             Requested size: 770.87813pt x 225.84319pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 440.
-
-
-Package xcolor Warning: Incompatible color definition on input line 440.
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 440.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 440.
-
 Package xcolor Warning: Incompatible color definition on input line 442.
 
 
@@ -2139,238 +2129,248 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 442.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 442.
+
+Package xcolor Warning: Incompatible color definition on input line 444.
+
+
+Package xcolor Warning: Incompatible color definition on input line 444.
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 444.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 444.
 <PIL_Test_files/PIL_Test_40_0.png, id=135, 379.4175pt x 270.00874pt>
 File: PIL_Test_files/PIL_Test_40_0.png Graphic file (type png)
 
 <use PIL_Test_files/PIL_Test_40_0.png>
-Package pdftex.def Info: PIL_Test_files/PIL_Test_40_0.png used on input line 44
-9.
+Package pdftex.def Info: PIL_Test_files/PIL_Test_40_0.png used on input line 45
+1.
 (pdftex.def)             Requested size: 379.41656pt x 270.00807pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 463.
+(babel)             in language  on input line 465.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 463.
+(babel)             in language  on input line 465.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 463.
+(babel)             in language  on input line 465.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 463.
+(babel)             in language  on input line 465.
  [6
 
  <./PIL_Test_files/PIL_Test_33_0.jpeg> <./PIL_Test_files/PIL_Test_35_0.jpeg> <.
 /PIL_Test_files/PIL_Test_40_0.png>]
 
-Package xcolor Warning: Incompatible color definition on input line 464.
+Package xcolor Warning: Incompatible color definition on input line 466.
 
 
-Package xcolor Warning: Incompatible color definition on input line 464.
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 464.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 464.
-
-Package xcolor Warning: Incompatible color definition on input line 467.
-
-
-Package xcolor Warning: Incompatible color definition on input line 467.
+Package xcolor Warning: Incompatible color definition on input line 466.
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 467.
+(babel)             in language  on input line 466.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 467.
+(babel)             in language  on input line 466.
 
-Package xcolor Warning: Incompatible color definition on input line 472.
+Package xcolor Warning: Incompatible color definition on input line 469.
 
 
-Package xcolor Warning: Incompatible color definition on input line 472.
+Package xcolor Warning: Incompatible color definition on input line 469.
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 472.
+(babel)             in language  on input line 469.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 472.
+(babel)             in language  on input line 469.
 
-Package xcolor Warning: Incompatible color definition on input line 480.
+Package xcolor Warning: Incompatible color definition on input line 474.
 
 
-Package xcolor Warning: Incompatible color definition on input line 480.
+Package xcolor Warning: Incompatible color definition on input line 474.
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 480.
+(babel)             in language  on input line 474.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 480.
+(babel)             in language  on input line 474.
 
-Package xcolor Warning: Incompatible color definition on input line 481.
+Package xcolor Warning: Incompatible color definition on input line 482.
 
 
-Package xcolor Warning: Incompatible color definition on input line 481.
+Package xcolor Warning: Incompatible color definition on input line 482.
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 481.
+(babel)             in language  on input line 482.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 481.
+(babel)             in language  on input line 482.
+
+Package xcolor Warning: Incompatible color definition on input line 483.
+
+
+Package xcolor Warning: Incompatible color definition on input line 483.
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 483.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 483.
 
 LaTeX Font Warning: Font shape `T2A/ptm/m/n' in size <9.5> not available
-(Font)              size <9> substituted on input line 488.
+(Font)              size <9> substituted on input line 490.
 
-LaTeX Font Info:    Try loading font information for T2A+pcr on input line 488.
+LaTeX Font Info:    Try loading font information for T2A+pcr on input line 490.
 
-LaTeX Font Info:    No file T2Apcr.fd. on input line 488.
+LaTeX Font Info:    No file T2Apcr.fd. on input line 490.
 
 LaTeX Font Warning: Font shape `T2A/pcr/m/n' undefined
-(Font)              using `T2A/cmr/m/n' instead on input line 488.
+(Font)              using `T2A/cmr/m/n' instead on input line 490.
 
 
 LaTeX Font Warning: Font shape `T2A/cmr/m/n' in size <9.5> not available
-(Font)              size <9> substituted on input line 488.
+(Font)              size <9> substituted on input line 490.
 
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 490.
+(mdframed)             works with oneside mode on input line 492.
 
 LaTeX Font Warning: Font shape `T2A/pcr/m/n' in size <9.5> not available
-(Font)              size <9> substituted on input line 492.
+(Font)              size <9> substituted on input line 494.
 
 
 LaTeX Font Warning: Font shape `T2A/pcr/bx/n' undefined
-(Font)              using `T2A/pcr/m/n' instead on input line 493.
+(Font)              using `T2A/pcr/m/n' instead on input line 495.
 
 
 LaTeX Font Warning: Font shape `T2A/pcr/bx/n' in size <9.5> not available
-(Font)              size <9> substituted on input line 494.
+(Font)              size <9> substituted on input line 496.
 
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 517.
+(mdframed)             works with oneside mode on input line 519.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 535.
+(mdframed)             works with oneside mode on input line 537.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 555.
+(mdframed)             works with oneside mode on input line 557.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 576.
+(mdframed)             works with oneside mode on input line 578.
 
-Underfull \hbox (badness 5050) in paragraph at lines 579--579
+Underfull \hbox (badness 5050) in paragraph at lines 581--581
 []\T2A/pcr/bx/n/9 altered_im []=[] get_cells_from_image(im, ([]100[], []100[]) 
 , (im[].[]getbbox()[[]2[]][]-[][]100[], im[].[]getbbox()[[]3[]][]-
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 590.
+(babel)             in language  on input line 592.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 590.
+(babel)             in language  on input line 592.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 590.
+(babel)             in language  on input line 592.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 590.
+(babel)             in language  on input line 592.
 [7]
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 596.
+(mdframed)             works with oneside mode on input line 598.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 616.
+(mdframed)             works with oneside mode on input line 618.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 639.
+(mdframed)             works with oneside mode on input line 641.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 656.
+(mdframed)             works with oneside mode on input line 658.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 678.
+(mdframed)             works with oneside mode on input line 680.
 
-Underfull \hbox (badness 10000) in paragraph at lines 685--685
+Underfull \hbox (badness 10000) in paragraph at lines 687--687
 [][]\T2A/pcr/bx/n/9 print[]([]"[][]Плотность пор: [][]%.2e[][]"[][]%[]([]len[](
 cells)[]/[]((im[].[]getbbox()[[]2[]][]-[][]200[])[]*[](im[].[]getbbox()[[]3[]][
 ]-
  []
 
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 704.
+(mdframed)             works with oneside mode on input line 706.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 714.
+(mdframed)             works with oneside mode on input line 716.
 <PIL_Test_files/PIL_Test_57_1.png, id=149, 379.4175pt x 270.00874pt>
 File: PIL_Test_files/PIL_Test_57_1.png Graphic file (type png)
 
 <use PIL_Test_files/PIL_Test_57_1.png>
 Package pdftex.def Info: PIL_Test_files/PIL_Test_57_1.png used on input line 71
-7.
+9.
 (pdftex.def)             Requested size: 379.41656pt x 270.00807pt.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 734.
+(mdframed)             works with oneside mode on input line 736.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 755.
+(babel)             in language  on input line 757.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 755.
+(babel)             in language  on input line 757.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 755.
+(babel)             in language  on input line 757.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 755.
+(babel)             in language  on input line 757.
  [8 <./PIL_Test_files/PIL_Test_57_1.png>]
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 761.
-Package mdframed Info: Not enough space on this page on input line 766.
+(mdframed)             works with oneside mode on input line 763.
+Package mdframed Info: Not enough space on this page on input line 768.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 768.
+(mdframed)             works with oneside mode on input line 770.
 
-Package xcolor Warning: Incompatible color definition on input line 778.
+Package xcolor Warning: Incompatible color definition on input line 780.
 
 
-Package xcolor Warning: Incompatible color definition on input line 778.
+Package xcolor Warning: Incompatible color definition on input line 780.
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 778.
+(babel)             in language  on input line 780.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 778.
+(babel)             in language  on input line 780.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 787.
+(mdframed)             works with oneside mode on input line 789.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 808.
+(mdframed)             works with oneside mode on input line 810.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 828.
+(mdframed)             works with oneside mode on input line 830.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 848.
+(mdframed)             works with oneside mode on input line 850.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 870.
+(mdframed)             works with oneside mode on input line 872.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 890.
+(mdframed)             works with oneside mode on input line 892.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 910.
+(mdframed)             works with oneside mode on input line 912.
 
 LaTeX Font Warning: Font shape `T2A/pcr/m/it' undefined
-(Font)              using `T2A/pcr/m/n' instead on input line 931.
+(Font)              using `T2A/pcr/m/n' instead on input line 933.
 
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 950.
+(mdframed)             works with oneside mode on input line 952.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 977.
+(babel)             in language  on input line 979.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 977.
+(babel)             in language  on input line 979.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 977.
+(babel)             in language  on input line 979.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 977.
+(babel)             in language  on input line 979.
 [9]
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 990.
+(mdframed)             works with oneside mode on input line 992.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 1010.
+(mdframed)             works with oneside mode on input line 1012.
 
 
 LaTeX Font Warning: Font shape `T2A/pcr/m/it' in size <9.5> not available
-(Font)              size <9> substituted on input line 1015.
+(Font)              size <9> substituted on input line 1017.
 
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 1035.
+(mdframed)             works with oneside mode on input line 1037.
 Package mdframed Info: mdframed inside twoside mode but
-(mdframed)             works with oneside mode on input line 1055.
+(mdframed)             works with oneside mode on input line 1057.
 No file PIL_Test.ind.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1081.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1083.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 1081.
+(babel)             in language  on input line 1083.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 1081.
+(babel)             in language  on input line 1083.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 1081.
+(babel)             in language  on input line 1083.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 1081.
+(babel)             in language  on input line 1083.
 [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1081.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1083.
  (./PIL_Test.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1081.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1081.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1083.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1083.
 
 Package rerunfilecheck Info: File `PIL_Test.out' has not changed.
 (rerunfilecheck)             Checksum: 416557533C181B55A7CAA87974FBDD60;2095.
@@ -2382,12 +2382,12 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1081.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1083.
  ) 
 Here is how much of TeX's memory you used:
  32165 strings out of 493328
  550329 string characters out of 6140734
- 645654 words of memory out of 5000000
+ 645655 words of memory out of 5000000
  34975 multiletter control sequences out of 15000+600000
  16167 words of font info for 42 fonts, out of 8000000 for 9000
  954 hyphenation exceptions out of 8191
@@ -2405,7 +2405,7 @@ msfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super
 hare/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on PIL_Test.pdf (10 pages, 1249787 bytes).
+Output written on PIL_Test.pdf (10 pages, 1250054 bytes).
 PDF statistics:
  217 PDF objects out of 1000 (max. 8388607)
  157 compressed objects within 2 object streams
