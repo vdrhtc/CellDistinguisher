@@ -7,11 +7,11 @@
     \def\sphinxdocclass{article}
 
     % Declare the document class
-  \documentclass[letterpaper,10pt,russian]{/usr/lib/python3.3/site-packages/sphinx/texinputs/sphinxhowto}
-    \usepackage{wrapfig}
-    \usepackage{mathrsfs}
-    \usepackage{subcaption}
-    \usepackage{placeins}
+  \documentclass[twocolumn,10pt,russian]{/usr/lib/python3.3/site-packages/sphinx/texinputs/sphinxhowto}
+      \usepackage{wrapfig}
+      \usepackage{mathrsfs}
+      \usepackage{subcaption}
+      \usepackage{placeins}
     % Imports
     \usepackage[utf8]{inputenc}
     \DeclareUnicodeCharacter{00A0}{\\nobreakspace}
@@ -230,8 +230,6 @@
     \begin{document}
 
         
-            \maketitle
-        
     
 \part*{Сканирующая электронная микроскопия}В работе были исследованы мембраны компании Whatman \textbf{Anodisc}
 (анодированный алюминий). С заявленными производителем были сопоставлены
@@ -258,7 +256,7 @@
 мембраны с заявленными, а также определения качества полученных каналов
 для установления пригодности их к использованию в качестве матриц для
 выращивания металлических нанопроводов.
-\newpage
+
 \section{Экспериментальная часть}
 \subsection{Физический эксперимент}
 Так как в процессе сканирующей электронной микроскопии образец
@@ -269,21 +267,23 @@
     
 
     \begin{figure}
-    
-    \begin{subfigure}{0.5\textwidth}
+    \centering
+    \begin{subfigure}[t]{0.5\textwidth}
     \centering
     \includegraphics[max size={0.9\textwidth}{\textheight}]{PIL_Test_files/PIL_Test_10_0.jpeg}
-    \caption{Вид мембраны сверху}
-    \end{subfigure}%   
-    \begin{subfigure}{0.5\textwidth}
+    \caption{Вид мембраны сверху (верх соответствует верху на рис. (б))}
+    \end{subfigure}
+  
+    
+    \begin{subfigure}[t]{0.5\textwidth}
     \centering
     \includegraphics[max size={0.9\textwidth}{\textheight}]{PIL_Test_files/PIL_Test_11_0.jpeg}
     \caption{Вид скола при меньшем увеличении}
     \end{subfigure} 
-      
-    \begin{subfigure}{\textwidth}
+    
+    \begin{subfigure}{0.5\textwidth}
     \centering
-    \includegraphics[max size={0.5\textwidth}{\textheight}]{PIL_Test_files/PIL_Test_12_0.jpeg}
+    \includegraphics[max size={0.9\textwidth}{\textheight}]{PIL_Test_files/PIL_Test_12_0.jpeg}
     \caption{Вид части скола в толще мембраны при большем увеличении}
     \end{subfigure}
     
@@ -302,8 +302,9 @@
 пикселей. Те, значение которых больше некоторого порогового,
 закрашиваются белым цетом, а остальные черным. Оптимальное пороговое
 значение подбирается опытным путём. Таким образом происходит выделение
-границы, и картинка становится контрастней.
-\subsubsection{Размеры пор}После обработки у нас имеется набор черных пикселей, которые являются
+границы, и картинка становится контрастней (Рис. 2).
+\subsubsection{Размеры пор}
+После обработки у нас имеется набор черных пикселей, которые являются
 внутренними по отношению к порам, и белые, которые принадлежат их
 границе. Начинаем последовательный перебор пикселей. Если находим чёрный
 пиксель, это значит, что мы нашли пору. Теперь находим все пиксели,
@@ -313,8 +314,8 @@
 они добавляются в множество поры и закрашиваются серым, если нет, то
 вновь продолжается поиск черных пикселей, т.е новых пор, причем уже
 приписанные найденной поре пиксели уже точно выходят из повторного
-рассмотрения, т.к. мы закрасили их серым). В итоге мы получаем множество
-координат пикселей, принадлежащих каждой из найденным пор. Далее мы
+рассмотрения, т.к. мы закрасили их серым) (Рис. 3). В итоге мы получаем множество
+координат пикселей, принадлежащих каждой из найденных пор. Далее мы
 находим размер пор как диаметр множества или как корень из площади поры.
 Площадь поры вычисляется, как количество пикселей, принадлежащих ей,
 умноженное на площадь одного пикселя (размер пикселя известен).
@@ -326,8 +327,9 @@
     \centering
     \includegraphics[max size={\textwidth}{\textheight}]{PIL_Test_files/PIL_Test_17_0.jpeg}
     \caption{Элемент исходного изображения}
-    \end{subfigure}%
-    \begin{subfigure}{0.4\textwidth}
+    \end{subfigure}
+    
+    \begin{subfigure}{0.325\textwidth}
     \centering
     \includegraphics[max size={\textwidth}{\textheight}]{PIL_Test_files/PIL_Test_19_0.png}
     \caption{Тот же элемент после установки порога}
@@ -338,8 +340,8 @@
    
     \begin{figure}[h]
     \centering
-    \includegraphics[max size={0.5\textwidth}{\textheight}]{PIL_Test_files/PIL_Test_20_0.jpeg}
-    \caption{Результирующее изображение}
+    \includegraphics[max size={0.35\textwidth}{\textheight}]{PIL_Test_files/PIL_Test_20_0.jpeg}
+    \caption{Результирующее изображение с закрашенными порами}
     \end{figure}
             
         
@@ -351,7 +353,7 @@
 В основе метода для решения данной задачи лежит преобразование Хафа
 (Hough Transform). Но предварительная подготовка в этом случае содержит
 в себе, кроме описанного выше, использование встроенного в Python Image
-Library фильтра поиска границ, иначе алгоритм будет работать неверно. Преобразование Хафа позволяет находить прямые в изображении и получать
+Library фильтра поиска границ, иначе алгоритм работал бы неверно. Преобразование Хафа позволяет находить прямые в изображении и получать
 значения их параметров. После обработки на входе программы мы имеем
 набор черных пикселей, которые имеют значение интенсивности 0, и белых
 пикселей, большинство из которых лежат на неидеальных прямых,
@@ -382,45 +384,42 @@ Library фильтра поиска границ, иначе алгоритм б
 пересечения, которые соответствуют большим углам наклона искомых прямых
 (порог выбирается также эмпирически).
 Определение края и порога, а также разбиение на части, дали следующие
-результаты:
-\FloatBarrier
+результаты (Рис. 4)
 
-    \begin{figure}[!ht]
-	\begin{subfigure}{\textwidth}
+	\begin{figure}[h]
 	\centering
-    \includegraphics[max size={\textwidth}{0.15\textheight}]{PIL_Test_files/PIL_Test_26_0.jpeg}
-    \caption{Элемент исходной картинки Рис.1 (с)}
- \end{subfigure}
-    
-    \begin{subfigure}{0.33\textwidth}
-    \includegraphics[max size={0.9\textwidth}{0.15\textheight}]{PIL_Test_files/PIL_Test_27_0.jpeg}
-    \end{subfigure}%
-    \begin{subfigure}{0.33\textwidth}
-    \includegraphics[max size={0.9\textwidth}{0.15\textheight}]{PIL_Test_files/PIL_Test_28_0.jpeg}
-    \par
-    \end{subfigure}%
-    \begin{subfigure}{0.33\textwidth}
-    \includegraphics[max size={0.9\textwidth}{0.15\textheight}]{PIL_Test_files/PIL_Test_29_0.jpeg}
-    \par
-    \end{subfigure}
-    \caption{Разбиение (на целое число отрезов заданной ширины) 
-    и предварительная обработка изображения для Hough transform}
-    \end{figure}
+		\begin{subfigure}{0.5\textwidth}
+	    	\includegraphics[width = \textwidth]{PIL_Test_files/PIL_Test_26_0.jpeg}
+	    \caption{Элемент исходной картинки Рис.1 (с)}
+	 	\end{subfigure}
+ 	
+ 	\bigskip
+    	\begin{subfigure}{0.17\textwidth}
+		    \includegraphics[width=0.9\textwidth]{PIL_Test_files/PIL_Test_27_0.jpeg}
+	    \end{subfigure}%~
+	    \begin{subfigure}{0.17\textwidth}
+	 	   \includegraphics[width = 0.9\textwidth]{PIL_Test_files/PIL_Test_28_0.jpeg}
+	    \end{subfigure}%~
+	    \begin{subfigure}{0.17\textwidth}
+	 	   \includegraphics[width = 0.9\textwidth]{PIL_Test_files/PIL_Test_29_0.jpeg}
+	    \end{subfigure}
+	    \caption{Разбиение (на целое число отрезов заданной ширины) 
+	    	и предварительная обработка изображения для Hough transform}
+   \end{figure}
         
-    \FloatBarrier
+\FloatBarrier
 В пространстве Хафа при анализе второго (среднего) отрезка фотографии
 получено следующее распределение интенсивностей:
 \FloatBarrier
-    \begin{figure}[h]
+    \begin{figure*}
     \centering
-    \includegraphics[max size={\textwidth}{\textheight}]{PIL_Test_files/PIL_Test_31_0.jpeg}
-    \caption{Распределение интенсивностей в пространстве Хафа}
-    \end{figure}
-    \FloatBarrier
+    	\includegraphics[max size={\textwidth}{\textheight}]{PIL_Test_files/PIL_Test_31_0.jpeg}
+    	\caption{Распределение интенсивностей в пространстве Хафа}
+    \end{figure*}
+\FloatBarrier
     
-Это распределение позволило определить на фотографии следующие прямые:
 
-    \begin{figure}[h]
+    \begin{figure*}
     \begin{subfigure}{\textwidth}
     \centering
     \includegraphics[max size={0.3\textwidth}{\textheight}]{PIL_Test_files/PIL_Test_33_0.jpeg}
@@ -432,25 +431,40 @@ Library фильтра поиска границ, иначе алгоритм б
     \includegraphics[max size={\textwidth}{\textheight}]{PIL_Test_files/PIL_Test_35_0.jpeg}
     \caption{Обнаруженные прямые на оригинале}
     \end{subfigure}
-    \end{figure}
+    \caption{Демонстрация обнаружения прямых}
+    \end{figure*}
         
     \FloatBarrier
+ 
+Это распределение позволило определить на фотографии следующие прямые - Рис. 6.
+
 Коэффициенты всех обнаруженных прямых после работы программы сохраняются
 в памяти компьютера, поэтому возможна любая дальнейшая статистическая
 обработка.
 \FloatBarrier
 \section{Результаты и обсуждение}
 
+
+
 \subsection{Размеры пор}
+    \begin{figure}[h]
+    \begin{subfigure}{0.45\textwidth}
+    \includegraphics[max size={\textwidth}{\textheight}]{PIL_Test_files/index.png}
+    \end{subfigure}
+    
+    \begin{subfigure}{0.45\textwidth}
+    \includegraphics[max size={\textwidth}{\textheight}]{PIL_Test_files/index1.png}
+    \end{subfigure}
+    
+    \caption{Гистограммы распределения пор по размерам (для первой и второй нормы клеток)}
+    \end{figure}
+    
 В результате анализа данных были получены: гистограмма распределения
-размеров пор, усредненные размеры пор двумя способами (корень из площади
+размеров пор (Рис. 7), усредненные размеры пор двумя способами (корень из площади
 и диаметр), характерное отклонение от цилиндричности по разности
 вычисленных характерных средних размеров, плотность пор.
 
-    \begin{wrapfigure}[9]{l}{0.5\textwidth}
-    \includegraphics[max size={0.5\textwidth}{\textheight}]{PIL_Test_files/PIL_Test_40_0.png}
-    \caption{Гистограмма распределеня пор по размерам}
-    \end{wrapfigure}
+
 Заявленный средний размер хорошо совпадает с рассчитанным -
 $0.11 \pm 0.05$ мкм. В тоже время в плотности пор обнаружены
 существенные расхождения: заявленное значение в $2\cdot 10^8$ см$^{-2}$
@@ -458,28 +472,25 @@ $0.11 \pm 0.05$ мкм. В тоже время в плотности пор об
 отклонение от цилиндричности составило $-2.85\cdot 10^{-8}$ мкм, то есть
 в среднем преобладает вытянутая форма пор (поры вытянуты на 29\%).
 
-    
-    
-            
-        
-\newpage    
+
 \subsection{Толщина мембраны}
 Измеренная толщина мембраны составила 57 мкм, что почти в три раза
 отличается от заявленной 22 мкм.
-\subsection{Каналы}По результатам работы программы получено среднее по модулю отклонение от
+\subsection{Каналы}
+По результатам работы программы получено среднее по модулю отклонение от
 вертикали в 2$^\circ$ в толще мембраны.Имеется также тенденция к
 искривлению каналов относительно прямых линий. О количестве дефектов
 сложно судить в силу наличия большого количества механических
 повреждений на сколе.
-\subsection{Выводы}Имеются существенные отклонения от заявленных параметров. Ошибки с нашей
-стороны быть не может, возможно, измерялся фильтр другой модели нежели
-чем предполагалось.
+\subsection{Выводы}
+Имеются существенные отклонения от заявленных параметров. Разницу в толщине больше чем в два раза можно объяснить тем, что, скорее всего, исследовался фильтр другой модели с иными параметрами. Тем же может быть объяснена и разница в плотности, хотя для этого параметра возможна вариация от одной стороны мембраны к другой даже в пределах одной модели. Второе могло бы быть важно в свете того, что в данной работе исследовалась только одна сторона, соответствующая Рис.1 (а), но с другой стороны, различие плотности пор в 20 раз означало бы, что, начавшись на одной стороне, 20 пор, в среднем, срастались бы в одну на другой стороне, что маловероятно, так как для фильтра важна пропускная способность.
 
 Мембрана, скорее всего, непригодна для выращивания нанопроводов.
 Качество каналов как и в плане цилиндричности, так и в плане постоянства
 наклона, недостаточно, на наш взгляд, для формирования проводов длины,
 сравнимой с толщиной пластины.
-\section{Приложение}Здесь представлены процедуры работы с программами, написанными нами. Исодный код можно найти по адресу https://github.com/vdrhtc/CellDistinguisher
+\section{Приложение}
+Здесь представлены процедуры работы с программами, написанными нами. Исодный код можно найти по адресу https://github.com/vdrhtc/CellDistinguisher
 \subsection{Cell distinguisher}
 
     % Make sure that atleast 4 lines are below the HR
@@ -578,7 +589,7 @@ $0.11 \pm 0.05$ мкм. В тоже время в плотности пор об
         \begin{ColorVerbatim}
             \vspace{-0\baselineskip}
             \begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{altered\PYZus{}im} \PY{o}{=} \PY{n}{get\PYZus{}cells\PYZus{}from\PYZus{}image}\PY{p}{(}\PY{n}{im}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{100}\PY{p}{,} \PY{l+m+mi}{100}\PY{p}{)} \PY{p}{,} \PY{p}{(}\PY{n}{im}\PY{o}{.}\PY{n}{getbbox}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{l+m+mi}{100}\PY{p}{,} \PY{n}{im}\PY{o}{.}\PY{n}{getbbox}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{3}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{l+m+mi}{200}\PY{p}{)}\PY{p}{,} \PY{n}{pixel\PYZus{}size}\PY{p}{,} \PY{l+m+mi}{80}\PY{p}{)}
+\PY{n}{altered\PYZus{}im} \PY{o}{=} \PY{n}{get\PYZus{}cells\PYZus{}from\PYZus{}image}\PY{p}{(}\PY{n}{im}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{100}\PY{p}{,} \\ \PY{l+m+mi}{100}\PY{p}{)} \PY{p}{,} \PY{p}{(}\PY{n}{im}\PY{o}{.}\PY{n}{getbbox}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{l+m+mi}{100}\PY{p}{,} \PY{n}{im}\PY{o}{.}\PY{n}{getbbox}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{3}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{l+m+mi}{200}\PY{p}{)}\PY{p}{,} \PY{n}{pixel\PYZus{}size}\PY{p}{,} \PY{l+m+mi}{80}\PY{p}{)}
 \end{Verbatim}
 
             
@@ -684,7 +695,7 @@ $0.11 \pm 0.05$ мкм. В тоже время в плотности пор об
 \PY{k}{print}\PY{p}{(}\PY{l+s}{\PYZdq{}}\PY{l+s}{Средний рамер поры по корню из площади: }\PY{l+s+si}{\PYZpc{}.2e}\PY{l+s}{\PYZdq{}}\PY{o}{\PYZpc{}} \PY{n}{mean}\PY{p}{(}\PY{n}{sizes}\PY{p}{)}\PY{p}{)}
 \PY{k}{print}\PY{p}{(}\PY{l+s}{\PYZdq{}}\PY{l+s}{Средний рамер поры по диаметру: }\PY{l+s+si}{\PYZpc{}.2e}\PY{l+s}{\PYZdq{}}\PY{o}{\PYZpc{}} \PY{n}{mean}\PY{p}{(}\PY{n}{sizes1}\PY{p}{)}\PY{p}{)}
 \PY{k}{print}\PY{p}{(}\PY{l+s}{\PYZdq{}}\PY{l+s}{Среднее отклонение от цилиндричности: }\PY{l+s+si}{\PYZpc{}.2e}\PY{l+s}{\PYZdq{}}\PY{o}{\PYZpc{}} \PY{n}{mean}\PY{p}{(}\PY{n+nb}{list}\PY{p}{(}\PY{n}{deltas}\PY{p}{)}\PY{p}{)}\PY{p}{)}
-\PY{k}{print}\PY{p}{(}\PY{l+s}{\PYZdq{}}\PY{l+s}{Плотность пор: }\PY{l+s+si}{\PYZpc{}.2e}\PY{l+s}{\PYZdq{}}\PY{o}{\PYZpc{}}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{cells}\PY{p}{)}\PY{o}{/}\PY{p}{(}\PY{p}{(}\PY{n}{im}\PY{o}{.}\PY{n}{getbbox}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{l+m+mi}{200}\PY{p}{)}\PY{o}{*}\PY{p}{(}\PY{n}{im}\PY{o}{.}\PY{n}{getbbox}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{3}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{l+m+mi}{300}\PY{p}{)}\PY{o}{*}\PY{p}{(}\PY{n}{pixel\PYZus{}size}\PY{o}{*}\PY{l+m+mi}{100}\PY{p}{)}\PY{o}{*}\PY{o}{*}\PY{l+m+mi}{2}\PY{p}{)}\PY{p}{)}\PY{p}{)}
+\PY{k}{print}\PY{p}{(}\PY{l+s}{\PYZdq{}}\PY{l+s}{Плотность пор: }\PY{l+s+si}{\PYZpc{}.2e}\PY{l+s}{\PYZdq{}}\PY{o}{\PYZpc{}}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{cells}\PY{p}{)}\PY{o}{/}\PY{p}{(}\PY{p}{(}\PY{n}{im}\PY{o}{.} \\ \PY{n}{getbbox}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{l+m+mi}{200}\PY{p}{)}\PY{o}{*}\PY{p}{(} \\ \PY{n}{im}\PY{o}{.}\PY{n}{getbbox}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{3}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{l+m+mi}{300}\PY{p}{)}\PY{o}{*}\PY{p}{(}\PY{n}{pixel\PYZus{}size}\PY{o}{*}\PY{l+m+mi}{100}\PY{p}{)}\PY{o}{*}\PY{o}{*}\PY{l+m+mi}{2}\PY{p}{)}\PY{p}{)}\PY{p}{)}
 \end{Verbatim}
 
             
@@ -760,20 +771,8 @@ $0.11 \pm 0.05$ мкм. В тоже время в плотности пор об
 
             % Add document contents.
             
-                \begin{InvisibleVerbatim}
-                \vspace{-0\baselineskip}
-\begin{alltt}Populating the interactive namespace from numpy and matplotlib
-\end{alltt}
-
-            \end{InvisibleVerbatim}
             
-                \begin{InvisibleVerbatim}
-                \vspace{-0\baselineskip}
-\begin{alltt}WARNING: pylab import has clobbered these variables: ['copy']
-`\%pylab --no-import-all` prevents importing * from pylab and numpy
-\end{alltt}
-
-            \end{InvisibleVerbatim}
+              
             
         
     
@@ -789,7 +788,7 @@ $0.11 \pm 0.05$ мкм. В тоже время в плотности пор об
         \begin{ColorVerbatim}
             \vspace{-0\baselineskip}
             \begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{im1} \PY{o}{=} \PY{n}{Image}\PY{o}{.}\PY{n}{open}\PY{p}{(}\PY{l+s}{\PYZsq{}}\PY{l+s}{./1\PYZus{}10.tif}\PY{l+s}{\PYZsq{}}\PY{p}{)}\PY{o}{.}\PY{n}{crop}\PY{p}{(}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{l+m+mi}{300}\PY{p}{,} \PY{l+m+mi}{1024}\PY{p}{,} \PY{l+m+mi}{600}\PY{p}{)}\PY{p}{)}
+\PY{n}{im1} \PY{o}{=} \PY{n}{Image}\PY{o}{.}\PY{n}{open}\PY{p}{(}\PY{l+s}{\PYZsq{}}\PY{l+s}{./1\PYZus{}10.tif}\PY{l+s}{\PYZsq{}}\PY{p}{)}\PY{o}{.} \\ \PY{n}{crop}\PY{p}{(}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{l+m+mi}{300}\PY{p}{,} \PY{l+m+mi}{1024}\PY{p}{,} \PY{l+m+mi}{600}\PY{p}{)}\PY{p}{)}
 \PY{n}{im1}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
 \end{Verbatim}
 
@@ -810,7 +809,7 @@ $0.11 \pm 0.05$ мкм. В тоже время в плотности пор об
         \begin{ColorVerbatim}
             \vspace{-0\baselineskip}
             \begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{slices} \PY{o}{=} \PY{n}{prepare\PYZus{}image}\PY{p}{(}\PY{n}{im1}\PY{p}{,} \PY{n}{threshold}\PY{o}{=}\PY{l+m+mi}{80}\PY{p}{,} \PY{n}{slice\PYZus{}thickness}\PY{o}{=}\PY{l+m+mi}{300}\PY{p}{)}
+\PY{n}{slices} \PY{o}{=} \PY{n}{prepare\PYZus{}image}\PY{p}{(}\PY{n}{im1}\PY{p}{,} \PY{n}{threshold}\PY{o}{=}\PY{l+m+mi}{80}\PY{p}{,} \\ \PY{n}{slice\PYZus{}thickness}\PY{o}{=}\PY{l+m+mi}{300}\PY{p}{)}
 \end{Verbatim}
 
             
@@ -850,7 +849,7 @@ $0.11 \pm 0.05$ мкм. В тоже время в плотности пор об
         \begin{ColorVerbatim}
             \vspace{-0\baselineskip}
             \begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{coeffs} \PY{o}{=} \PY{n}{get\PYZus{}lines}\PY{p}{(}\PY{n}{slices}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,} \PY{n}{tolerance\PYZus{}a\PYZus{}b}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}\PY{p}{,} \PY{n}{max\PYZus{}a}\PY{o}{=}\PY{l+m+mf}{0.1}\PY{p}{)}
+\PY{n}{coeffs} \PY{o}{=} \PY{n}{get\PYZus{}lines}\PY{p}{(}\PY{n}{slices}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,} \PY{n}{tolerance\PYZus{}a\PYZus{}b}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}\PY{p}{,} \\ \PY{n}{max\PYZus{}a}\PY{o}{=}\PY{l+m+mf}{0.1}\PY{p}{)}
 \end{Verbatim}
 
             
@@ -929,7 +928,7 @@ Processing  4575 points.
             \PY{k}{print}\PY{p}{(}\PY{n}{point}\PY{p}{)}
             \PY{n}{column} \PY{o}{=} \PY{l+m+mi}{0}
             
-    \PY{n}{image}\PY{o}{.}\PY{n}{putpixel}\PY{p}{(}\PY{p}{(}\PY{n+nb}{int}\PY{p}{(}\PY{n}{point}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{*}\PY{l+m+mf}{4e3}\PY{p}{)}\PY{o}{+}\PY{l+m+mi}{500}\PY{p}{,} \PY{n+nb}{int}\PY{p}{(}\PY{n}{point}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{*}\PY{l+m+mf}{2.3}\PY{p}{)}\PY{o}{+}\PY{l+m+mi}{200}\PY{p}{)}\PY{p}{,} \PY{n+nb}{int}\PY{p}{(}\PY{n}{coeffs}\PY{p}{[}\PY{n}{point}\PY{p}{]}\PY{o}{/}\PY{n}{level}\PY{o}{*}\PY{l+m+mi}{255}\PY{o}{*}\PY{l+m+mi}{90}\PY{p}{)}\PY{p}{)}
+    \PY{n}{image}\PY{o}{.}\PY{n}{putpixel}\PY{p}{(}\PY{p}{(}\PY{n+nb}{int}\PY{p}{(}\PY{n}{point}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{*}\PY{l+m+mf}{4e3}\PY{p}{)}\PY{o}{+}\PY{l+m+mi}{500}\PY{p}{,} \PY{n+nb}{int}\PY{p}{(} \\ \PY{n}{point}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{*}\PY{l+m+mf}{2.3}\PY{p}{)}\PY{o}{+}\PY{l+m+mi}{200}\PY{p}{)}\PY{p}{,} \\ \PY{n+nb}{int}\PY{p}{(}\PY{n}{coeffs}\PY{p}{[} \PY{n}{point}\PY{p}{]}\PY{o}{/}\PY{n}{level}\PY{o}{*}\PY{l+m+mi}{255}\PY{o}{*}\PY{l+m+mi}{90}\PY{p}{)}\PY{p}{)}
 \PY{c}{\PYZsh{} image.show()}
 \end{Verbatim}
 
@@ -951,30 +950,32 @@ Processing  4575 points.
             
                 \begin{InvisibleVerbatim}
                 \vspace{-0\baselineskip}
-\begin{alltt}(-0.0625, 111.6)       (0.0037, 268.9)       (-0.0714, 300.6)
-(-0.0833, 287.8)       (-0.05, 77.5)       (-0.0036, 146.0)
-(0.0039, 268.9)       (0.0068, 268.0)       (-0.0417, 76.1)
-(-0.0714, 113.4)       (-0.0667, 130.7)       (0.0038, 290.0)
-(0.0035, 290.0)       (-0.0667, 188.0)       (-0.04, 75.8)
-(-0.0667, 147.1)       (0.0667, 279.7)       (-0.0714, 130.9)
-(-0.0769, 149.8)       (-0.0038, 75.1)       (-0.0039, 75.1)
-(-0.0667, 112.5)       (0.0041, 268.9)       (-0.0455, 76.9)
-(-0.0435, 76.5)       (-0.0909, 89.5)       (-0.0435, 77.0)
-(-0.05, 77.0)       (-0.0455, 76.7)       (-0.0714, 113.1)
-(-0.0476, 76.8)       (-0.05, 201.7)       (-0.05, 110.0)
-(-0.0455, 76.4)       (-0.0357, 75.7)       (-0.0526, 77.5)
-(0.004, 289.9)       (-0.0714, 112.9)       (0.0036, 268.9)
-(-0.0556, 110.7)       (0.0037, 289.9)       (-0.0909, 134.2)
-(-0.05, 109.8)       (0.0035, 269.0)       (0.0833, 276.0)
-(-0.0769, 113.8)       (-0.0588, 110.9)       (-0.0417, 75.8)
-(-0.0417, 76.2)       (-0.0037, 146.0)       (-0.0625, 100.4)
-(0.0034, 269.0)       (-0.05, 77.2)       (-0.0625, 86.8)
-(0.004, 268.9)       (-0.0833, 114.8)       (-0.0556, 77.8)
-(0.0039, 289.9)       (0.0047, 14.7)       (0.0036, 269.0)
-(0.0048, 14.7)       (0.0038, 268.9)       (0.0037, 290.0)
-(-0.0556, 202.6)       (0.0037, 269.0)       (-0.05, 98.0)
-(0.0036, 290.0)       (0.0038, 289.9)       (-0.0625, 111.3)
-(-0.0714, 112.6)\end{alltt}
+\begin{alltt}
+(-0.0625, 111.6)       (0.0037, 268.9)          (-0.0714, 300.6)
+(-0.0833, 287.8)       (-0.05, 77.5)          (-0.0036, 146.0)
+(0.0039, 268.9)       (0.0068, 268.0          (-0.0417, 76.1)
+(-0.0714, 113.4)       (-0.0667, 130.7)          (0.0038, 290.0)
+(0.0035, 290.0)       (-0.0667, 188.0)          (-0.04, 75.8)
+(-0.0667, 147.1)       (0.0667, 279.7)         (-0.0714, 130.9)
+(-0.0769, 149.8)       (-0.0038, 75.1)         (-0.0039, 75.1)
+(-0.0667, 112.5)       (0.0041, 268.9)         (-0.0455, 76.9)
+(-0.0435, 76.5)       (-0.0909, 89.5)         (-0.0435, 77.0)
+(-0.05, 77.0)       (-0.0455, 76.7)         (-0.0714, 113.1)
+(-0.0476, 76.8)       (-0.05, 201.7)         (-0.05, 110.0)
+(-0.0455, 76.4)       (-0.0357, 75.7)         (-0.0526, 77.5)
+(0.004, 289.9)       (-0.0714, 112.9)         (0.0036, 268.9)
+(-0.0556, 110.7)       (0.0037, 289.9)         (-0.0909, 134.2)
+(-0.05, 109.8)       (0.0035, 269.0)         (0.0833, 276.0)
+(-0.0769, 113.8)       (-0.0588, 110.9)         (-0.0417, 75.8)
+(-0.0417, 76.2)       (-0.0037, 146.0)         (-0.0625, 100.4)
+(0.0034, 269.0)       (-0.05, 77.2)         (-0.0625, 86.8)
+(0.004, 268.9)       (-0.0833, 114.8)         (-0.0556, 77.8)
+(0.0039, 289.9)       (0.0047, 14.7)         (0.0036, 269.0)
+(0.0048, 14.7)       (0.0038, 268.9)         (0.0037, 290.0)
+(-0.0556, 202.6)       (0.0037, 269.0)         (-0.05, 98.0)
+(0.0036, 290.0)       (0.0038, 289.9)         (-0.0625, 111.3)
+(-0.0714, 112.6)
+\end{alltt}
 
             \end{InvisibleVerbatim}
             
@@ -1013,10 +1014,10 @@ Processing  4575 points.
             \vspace{-0\baselineskip}
             \begin{Verbatim}[commandchars=\\\{\}]
 \PY{k}{for} \PY{n}{interesting\PYZus{}point} \PY{o+ow}{in} \PY{n}{interesting\PYZus{}points}\PY{p}{:}
-    \PY{k}{for} \PY{n}{y} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{copy}\PY{o}{.}\PY{n}{getbbox}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{)}\PY{p}{:}
-\PY{c}{\PYZsh{}         print(interesting\PYZus{}point, int(interesting\PYZus{}point[0]*y+interesting\PYZus{}point[1]), y)}
-        \PY{k}{if} \PY{n+nb}{int}\PY{p}{(}\PY{n}{interesting\PYZus{}point}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{*}\PY{n}{y}\PY{o}{+}\PY{n}{interesting\PYZus{}point}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)} \PY{o}{\PYZgt{}} \PY{l+m+mi}{0} \PY{o+ow}{and} \newline \PY{n+nb}{int}\PY{p}{(}\PY{n}{interesting\PYZus{}point}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{*}\PY{n}{y}\PY{o}{+}\PY{n}{interesting\PYZus{}point}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)} \PY{o}{\PYZlt{}} \PY{n}{copy}\PY{o}{.}\PY{n}{getbbox}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{p}{:}
-            \PY{n}{copy}\PY{o}{.}\PY{n}{putpixel}\PY{p}{(}\PY{p}{(}\PY{n+nb}{int}\PY{p}{(}\PY{n}{interesting\PYZus{}point}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{*}\PY{n}{y}\PY{o}{+}\PY{n}{interesting\PYZus{}point}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PY{p}{,} \PY{n}{y}\PY{p}{)}\PY{p}{,} \PY{l+m+mi}{150}\PY{p}{)}
+    \PY{k}{for} \PY{n}{y} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{copy}\PY{o}{.}\PY{n}{getbbox}\PY{p}{(}\PY{p}{)}\PY{p}{[} \PY{l+m+mi}{3}\PY{p}{]}\PY{p}{)}\PY{p}{:}
+\PY{c}{\PYZsh{}         print(interesting\PYZus{}point, int(interesting \\ \PYZus{}point[0]*y+interesting\PYZus{}point[1]), y)} 
+        \PY{k}{if} \PY{n+nb}{int}\PY{p}{(}\PY{n}{interesting\PYZus{}point}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{*}\PY{n}{y} \\ \PY{o}{+}\PY{n}{interesting\PYZus{}point}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)} \PY{o}{\PYZgt{}} \PY{l+m+mi}{0} \PY{o+ow}{and} \newline \PY{n+nb}{int}\PY{p}{(}\PY{n}{interesting\PYZus{}point}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{*} \\ \PY{n}{y}\PY{o}{+}\PY{n}{interesting\PYZus{}point}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)} \PY{o}{\PYZlt{}} \PY{n}{copy}\PY{o}{.}\PY{n}{getbbox}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{p}{:}
+            \PY{n}{copy}\PY{o}{.}\PY{n}{putpixel}\PY{p}{(}\PY{p}{(}\PY{n+nb}{int}\PY{p}{(}\PY{n}{interesting\PYZus{}point}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{*}\PY{n}{y}\PY{o}{+} \\ \PY{n}{interesting\PYZus{}point}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}\PY{p}{,} \PY{n}{y}\PY{p}{)}\PY{p}{,} \PY{l+m+mi}{150}\PY{p}{)}
 \PY{n}{copy}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
 \end{Verbatim}
 
@@ -1026,53 +1027,9 @@ Processing  4575 points.
         \end{ColorVerbatim}
     
 
-
-    % Make sure that atleast 4 lines are below the HR
-    \needspace{4\baselineskip}
-
-    
-        \vspace{6pt}
-        \makebox[0.1\linewidth]{\smaller\hfill\tt\color{nbframe-in-prompt}In\hspace{4pt}{[}121{]}:\hspace{4pt}}\\*
-        \vspace{-2\baselineskip}
-        \begin{ColorVerbatim}
-            \vspace{-0\baselineskip}
-            \begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{copy\PYZus{}1} \PY{o}{=} \PY{n}{im1}\PY{o}{.}\PY{n}{copy}\PY{p}{(}\PY{p}{)}
-\end{Verbatim}
-
-            
-                \vspace{-0.2\baselineskip}
-            
-        \end{ColorVerbatim}
-    
-
-
-    % Make sure that atleast 4 lines are below the HR
-    \needspace{4\baselineskip}
-
-    
-        \vspace{6pt}
-        \makebox[0.1\linewidth]{\smaller\hfill\tt\color{nbframe-in-prompt}In\hspace{4pt}{[}122{]}:\hspace{4pt}}\\*
-        \vspace{-2\baselineskip}
-        \begin{ColorVerbatim}
-            \vspace{-0\baselineskip}
-            \begin{Verbatim}[commandchars=\\\{\}]
-\PY{k}{for} \PY{n}{interesting\PYZus{}point} \PY{o+ow}{in} \PY{n}{interesting\PYZus{}points}\PY{p}{:}
-    \PY{k}{for} \PY{n}{y} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,} \PY{n}{copy}\PY{o}{.}\PY{n}{getbbox}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{)}\PY{p}{:}
-\PY{c}{\PYZsh{}         print(interesting\PYZus{}point, int(interesting\PYZus{}point[0]*y+interesting\PYZus{}point[1]), y)}
-        \PY{k}{if} \PY{n+nb}{int}\PY{p}{(}\PY{n}{interesting\PYZus{}point}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{*}\PY{n}{y}\PY{o}{+}\PY{n}{interesting\PYZus{}point}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)} \PY{o}{\PYZgt{}} \PY{l+m+mi}{0} \PY{o+ow}{and} \newline \PY{n+nb}{int}\PY{p}{(}\PY{n}{interesting\PYZus{}point}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{*}\PY{n}{y}\PY{o}{+}\PY{n}{interesting\PYZus{}point}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)} \PY{o}{\PYZlt{}} \PY{n}{copy}\PY{o}{.}\PY{n}{getbbox}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{p}{:}
-            \PY{n}{copy\PYZus{}1}\PY{o}{.}\PY{n}{putpixel}\PY{p}{(}\PY{p}{(}\PY{n+nb}{int}\PY{p}{(}\PY{n}{interesting\PYZus{}point}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{o}{*}\PY{n}{y}\PY{o}{+}\PY{n}{interesting\PYZus{}point}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{o}{+}\PY{l+m+mi}{300}\PY{p}{)}\PY{p}{,} \PY{n}{y}\PY{p}{)}\PY{p}{,} \PY{l+m+mi}{255}\PY{p}{)}
-\PY{n}{copy\PYZus{}1}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
-\end{Verbatim}
-
-            
-                \vspace{-0.2\baselineskip}
-            
-        \end{ColorVerbatim}
-    
-
-
    
+    
+
 
         
 
