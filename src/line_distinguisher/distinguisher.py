@@ -20,6 +20,13 @@ def get_lines(slice_, tolerance_a_b = (2, 0), max_a = 0.1):
     coeffs = get_coefficients(slice_, tolerance_a_b, max_a)
     return coeffs
 
+def decimate(image, interval):
+    im_width, im_height = image.getbbox()[2:]
+    
+    for i in range(0, im_width, interval[0]):
+        for j in range(0, im_height, interval[1]):
+            image.putpixel((i, j), 0)
+
 def __image_preparing__(im, threshold):
         converted_im = im.convert(mode = 'L') 
         filtered_converted_im = converted_im.filter(ImageFilter.FIND_EDGES) 
@@ -34,4 +41,6 @@ def __slice_image__(im, slice_thickness):
         slices.append(im.crop((i, 0, i+slice_thickness, im_height)))   
         i+=slice_thickness
     return slices
+
+
 
